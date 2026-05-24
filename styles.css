@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(olivier-guillard-FKJgBUDoVC0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* BLACK NAV BAR - height matches content */
+.navbar {
+    background-color: black;
+    width: 100%;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;    /* horizontal padding only */
+}
+
+/* NAV LAYOUT: logo left, links right, both vertically centered */
+nav {
+    display: table;      /* simple vertical alignment trick */
+    width: 100%;
+}
+
+.logo, ul {
+    display: table-cell;
+    vertical-align: middle;   /* centers content vertically */
+}
+
+.logo {
+    width: 110px;      /* matches your image width */
+}
+
+.logo img {
+    width: 110px;
+    height: auto;
+    display: block;    /* removes extra space below image */
+}
+
+ul {
+    list-style-type: none;
+    text-align: right; /* pushes links to the right */
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    padding: 5px 35px;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #667;
+    color: orange;
+}
+
+ul li.home a {
+    background-color: #667;
+    color: orange;
+}
+
+/* TITLE AND BUTTONS */
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1 {
+    color: orange;
+    font-size: 50px;
+}
+
+.button {
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 4px;
+}
